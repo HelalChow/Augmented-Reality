@@ -29,12 +29,15 @@ class ViewController: UIViewController {
         
     }
     
+    func randomFloat(min: Float, max: Float) -> Float{
+        return (Float(arc4random()) / 0xFFFFFFFF) * (max-min) + min
+    }
     
     @IBAction func addCube(_ sender: Any) {
-        //let zCoords = randomFloat(min:-2, max:-0.2)
+        let zCoords = randomFloat(min:-2, max:-0.2)
         
         let cubeNode = SCNNode(geometry: SCNBox(width: 0.1, height: 0.1, length: 0.1, chamferRadius: 0))
-        cubeNode.position = SCNVector3(0,0,-0.2) // in meters
+        cubeNode.position = SCNVector3(0,0,zCoords) // in meters
         sceneView.scene.rootNode.addChildNode(cubeNode)
     
     }
