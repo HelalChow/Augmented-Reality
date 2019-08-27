@@ -21,8 +21,21 @@
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6yS-AB-bkE">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="663"/>
                             </arscnView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9B-SR-b0n">
+                                <rect key="frame" x="249" y="550" width="110" height="57"/>
+                                <color key="backgroundColor" red="0.59607843140000005" green="0.89411764709999997" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="68" id="7r7-DQ-b3b"/>
+                                    <constraint firstAttribute="width" constant="68" id="9ek-Hz-ofP"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="32" id="SeB-ia-kTW"/>
+                                </constraints>
+                                <state key="normal" title="Add Cup"/>
+                                <connections>
+                                    <action selector="addCup:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oeV-sO-AQd"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmU-lm-AQe">
-                                <rect key="frame" x="34" y="539" width="143" height="68"/>
+                                <rect key="frame" x="16" y="550" width="95" height="57"/>
                                 <color key="backgroundColor" red="0.59607843140000005" green="0.89411764709999997" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="KyR-m8-EKT"/>
@@ -31,20 +44,6 @@
                                 <state key="normal" title="Add Cube"/>
                                 <connections>
                                     <action selector="addCube:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hkA-fi-8oO"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9B-SR-b0n">
-                                <rect key="frame" x="231" y="539" width="128" height="68"/>
-                                <color key="backgroundColor" red="0.59607843140000005" green="0.89411764709999997" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="68" id="7r7-DQ-b3b"/>
-                                    <constraint firstAttribute="width" constant="68" id="9ek-Hz-ofP"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="32" id="SeB-ia-kTW"/>
-                                    <constraint firstAttribute="height" constant="30" id="zJF-5D-Nuc"/>
-                                </constraints>
-                                <state key="normal" title="Add Cup"/>
-                                <connections>
-                                    <action selector="addCup:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oeV-sO-AQd"/>
                                 </connections>
                             </button>
                         </subviews>

@@ -34,10 +34,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func addCube(_ sender: Any) {
-        //let zCoords = randomFloat(min:-2, max:-0.2)
-        
         let cubeNode = SCNNode(geometry: SCNBox(width: 0.1, height: 0.1, length: 0.1, chamferRadius: 0))
-        //cubeNode.position = SCNVector3(0,0,zCoords) // in meters
 
         let cc = getCameraCoordinates(sceneView: sceneView)
         cubeNode.position = SCNVector3(cc.x, cc.y, cc.z)
