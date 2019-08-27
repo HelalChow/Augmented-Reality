@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="663"/>
                             </arscnView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmU-lm-AQe">
-                                <rect key="frame" x="16" y="596" width="113" height="51"/>
+                                <rect key="frame" x="34" y="539" width="143" height="68"/>
                                 <color key="backgroundColor" red="0.59607843140000005" green="0.89411764709999997" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="KyR-m8-EKT"/>
@@ -34,7 +34,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9B-SR-b0n">
-                                <rect key="frame" x="255" y="596" width="104" height="49"/>
+                                <rect key="frame" x="231" y="539" width="128" height="68"/>
                                 <color key="backgroundColor" red="0.59607843140000005" green="0.89411764709999997" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="68" id="7r7-DQ-b3b"/>
