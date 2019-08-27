@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,14 +15,14 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AugmentedReality" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6yS-AB-bkE">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="663"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </arscnView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9B-SR-b0n">
-                                <rect key="frame" x="249" y="550" width="110" height="57"/>
+                                <rect key="frame" x="249" y="721" width="110" height="57"/>
                                 <color key="backgroundColor" red="0.59607843140000005" green="0.89411764709999997" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="68" id="7r7-DQ-b3b"/>
@@ -35,7 +35,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmU-lm-AQe">
-                                <rect key="frame" x="16" y="550" width="95" height="57"/>
+                                <rect key="frame" x="16" y="721" width="106" height="57"/>
                                 <color key="backgroundColor" red="0.59607843140000005" green="0.89411764709999997" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="KyR-m8-EKT"/>
@@ -54,7 +54,6 @@
                             <constraint firstItem="6yS-AB-bkE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Aew-Su-o7E"/>
                             <constraint firstItem="6yS-AB-bkE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="HY9-Ii-unb"/>
                             <constraint firstItem="6yS-AB-bkE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JFh-HI-ENk"/>
-                            <constraint firstItem="lmU-lm-AQe" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="RPJ-LI-fKd"/>
                             <constraint firstItem="d9B-SR-b0n" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="UlF-Ra-Oo7"/>
                             <constraint firstItem="6yS-AB-bkE" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Wj6-h3-PMW"/>
                             <constraint firstAttribute="bottom" secondItem="6yS-AB-bkE" secondAttribute="bottom" id="bDf-8j-LXa"/>
@@ -71,7 +70,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138.40000000000001" y="133.5832083958021"/>
+            <point key="canvasLocation" x="138.40000000000001" y="133.00492610837438"/>
         </scene>
     </scenes>
 </document>
