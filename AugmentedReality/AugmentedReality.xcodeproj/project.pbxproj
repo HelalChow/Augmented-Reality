@@ -14,6 +14,7 @@
 		1B755E89231594010040977B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B755E87231594010040977B /* LaunchScreen.storyboard */; };
 		1B755E94231594010040977B /* AugmentedRealityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B755E93231594010040977B /* AugmentedRealityTests.swift */; };
 		1B755E9F231594010040977B /* AugmentedRealityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B755E9E231594010040977B /* AugmentedRealityUITests.swift */; };
+		1B755EAD2315C31A0040977B /* Models.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B755EAC2315C31A0040977B /* Models.scnassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		1B755E9A231594010040977B /* AugmentedRealityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AugmentedRealityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B755E9E231594010040977B /* AugmentedRealityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AugmentedRealityUITests.swift; sourceTree = "<group>"; };
 		1B755EA0231594010040977B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B755EAC2315C31A0040977B /* Models.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Models.scnassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 				1B755E80231594000040977B /* ViewController.swift */,
 				1B755E82231594000040977B /* Main.storyboard */,
 				1B755E85231594010040977B /* Assets.xcassets */,
+				1B755EAC2315C31A0040977B /* Models.scnassets */,
 				1B755E87231594010040977B /* LaunchScreen.storyboard */,
 				1B755E8A231594010040977B /* Info.plist */,
 			);
@@ -230,6 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B755E89231594010040977B /* LaunchScreen.storyboard in Resources */,
+				1B755EAD2315C31A0040977B /* Models.scnassets in Resources */,
 				1B755E86231594010040977B /* Assets.xcassets in Resources */,
 				1B755E84231594000040977B /* Main.storyboard in Resources */,
 			);
