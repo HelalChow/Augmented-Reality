@@ -46,10 +46,11 @@ class ViewController: UIViewController {
 
     @IBAction func addCup(_ sender: Any) {
         let cupNode = SCNNode()
+        
         let cc = getCameraCoordinates(sceneView: sceneView)
         cupNode.position = SCNVector3(cc.x, cc.y, cc.z)
     
-        guard let virtualObjectScene = SCNScene(named: "cup.scn", inDirectory: "Models.scnassests")
+        guard let virtualObjectScene = SCNScene(named: "cup.scn", inDirectory: "Models.scnassests/cup")
             else{
                 return
         }
