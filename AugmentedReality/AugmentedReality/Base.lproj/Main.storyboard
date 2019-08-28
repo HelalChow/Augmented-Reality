@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </arscnView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iek-Zk-glq">
-                                <rect key="frame" x="284" y="770" width="91" height="42"/>
+                                <rect key="frame" x="284" y="763" width="91" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.386097046" blue="0.48204708750000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Add Chair">
@@ -33,7 +33,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZa-in-Mkm">
-                                <rect key="frame" x="0.0" y="770" width="98" height="41"/>
+                                <rect key="frame" x="0.0" y="763" width="98" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.59607843140000005" green="0.89411764709999997" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Add Lamp"/>
@@ -42,7 +42,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="glL-6K-ZnC">
-                                <rect key="frame" x="98" y="770" width="93" height="42"/>
+                                <rect key="frame" x="98" y="763" width="93" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Add Candle">
@@ -53,11 +53,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GwN-ym-c7S">
-                                <rect key="frame" x="191" y="770" width="94" height="42"/>
+                                <rect key="frame" x="191" y="763" width="94" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.6586568214904458" green="0.40733094100326273" blue="0.70524666878172582" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Add Vase">
-                                    <color key="titleColor" red="1" green="0.99456754690000004" blue="0.97392445159999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleColor" red="0.48395136389855908" green="0.93098121321864502" blue="0.96620899439999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
                                     <action selector="addVase:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xc0-yR-w8o"/>
