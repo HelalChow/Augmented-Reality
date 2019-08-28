@@ -131,5 +131,27 @@ class ViewController: UIViewController {
     }
     
     
+    @IBAction func addCup(_ sender: Any) {
+        let cupNode = SCNNode()
+        
+        let cc = getCameraCoordinates(sceneView: sceneView)
+        cupNode.position = SCNVector3(cc.x, cc.y, cc.z)
+        
+        guard let virtualObjectScene = SCNScene(named: "cup.scn", inDirectory: "Models.scnassets/cup")
+            else{
+                return
+        }
+        
+        let wrapperNode = SCNNode()
+        for child in virtualObjectScene.rootNode.childNodes{
+            child.geometry?.firstMaterial?.lightingModel = .physicallyBased
+            wrapperNode.addChildNode(child)
+        }
+        cupNode.addChildNode(wrapperNode)
+        
+        sceneView.scene.rootNode.addChildNode(cupNode)
+    }
+    
+    
 }
 
