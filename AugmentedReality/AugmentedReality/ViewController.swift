@@ -50,9 +50,9 @@ class ViewController: UIViewController {
         let cc = getCameraCoordinates(sceneView: sceneView)
         cupNode.position = SCNVector3(cc.x, cc.y, cc.z)
     
-        guard let virtualObjectScene = SCNScene(named: "cup.scn", inDirectory: "Models.scnassests/cup")
+        guard let virtualObjectScene = SCNScene(named: "cup.scn", inDirectory: "Models.scnassets/cup")
             else{
-                return
+            return
         }
         
         let wrapperNode = SCNNode()
