@@ -27,22 +27,20 @@
                                 <color key="backgroundColor" red="0.59607843140000005" green="0.89411764709999997" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Add Chair"/>
                                 <connections>
-                                    <action selector="addCandle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3PQ-ar-5rK"/>
                                     <action selector="addChair:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Utq-zm-s9d"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZa-in-Mkm">
-                                <rect key="frame" x="0.0" y="746" width="116" height="64"/>
+                                <rect key="frame" x="0.0" y="747" width="116" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.59607843140000005" green="0.89411764709999997" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Add Lamp"/>
                                 <connections>
-                                    <action selector="addCandle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jY6-4k-p6T"/>
                                     <action selector="addLamp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wkP-HR-hmV"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="glL-6K-ZnC">
-                                <rect key="frame" x="124" y="745" width="114" height="64"/>
+                                <rect key="frame" x="124" y="748" width="114" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.59607843140000005" green="0.89411764709999997" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Add Candle"/>
