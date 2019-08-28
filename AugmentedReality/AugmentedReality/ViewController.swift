@@ -42,28 +42,6 @@ class ViewController: UIViewController {
         sceneView.scene.rootNode.addChildNode(cubeNode)
     
     }
-
-
-    @IBAction func addCup(_ sender: Any) {
-        let cupNode = SCNNode()
-        
-        let cc = getCameraCoordinates(sceneView: sceneView)
-        cupNode.position = SCNVector3(cc.x, cc.y, cc.z)
-    
-        guard let virtualObjectScene = SCNScene(named: "cup.scn", inDirectory: "Models.scnassets/cup")
-            else{
-            return
-        }
-        
-        let wrapperNode = SCNNode()
-        for child in virtualObjectScene.rootNode.childNodes{
-            child.geometry?.firstMaterial?.lightingModel = .physicallyBased
-            wrapperNode.addChildNode(child)
-        }
-        cupNode.addChildNode(wrapperNode)
-        
-        sceneView.scene.rootNode.addChildNode(cupNode)
-    }
     
     struct myCameraCoordinates {
         var x = Float()
@@ -83,6 +61,75 @@ class ViewController: UIViewController {
         return cc
         
     }
+    
+    
+    @IBAction func addChair(_ sender: Any) {
+        let chairNode = SCNNode()
+        
+        let cc = getCameraCoordinates(sceneView: sceneView)
+        chairNode.position = SCNVector3(cc.x, cc.y, cc.z)
+        
+        guard let virtualObjectScene = SCNScene(named: "chair.scn", inDirectory: "Models.scnassets/chair")
+            else{
+                return
+        }
+        
+        let wrapperNode = SCNNode()
+        for child in virtualObjectScene.rootNode.childNodes{
+            child.geometry?.firstMaterial?.lightingModel = .physicallyBased
+            wrapperNode.addChildNode(child)
+        }
+        chairNode.addChildNode(wrapperNode)
+        
+        sceneView.scene.rootNode.addChildNode(chairNode)
+    }
+    
+    
+    
+    
+    @IBAction func addCandle(_ sender: Any) {
+        let candleNode = SCNNode()
+        
+        let cc = getCameraCoordinates(sceneView: sceneView)
+        candleNode.position = SCNVector3(cc.x, cc.y, cc.z)
+        
+        guard let virtualObjectScene = SCNScene(named: "candle.scn", inDirectory: "Models.scnassets/candle")
+            else{
+                return
+        }
+        
+        let wrapperNode = SCNNode()
+        for child in virtualObjectScene.rootNode.childNodes{
+            child.geometry?.firstMaterial?.lightingModel = .physicallyBased
+            wrapperNode.addChildNode(child)
+        }
+        candleNode.addChildNode(wrapperNode)
+        
+        sceneView.scene.rootNode.addChildNode(candleNode)
+    }
+    
+    
+    @IBAction func addLamp(_ sender: Any) {
+        let lampNode = SCNNode()
+        
+        let cc = getCameraCoordinates(sceneView: sceneView)
+        lampNode.position = SCNVector3(cc.x, cc.y, cc.z)
+        
+        guard let virtualObjectScene = SCNScene(named: "lamp.scn", inDirectory: "Models.scnassets/lamp")
+            else{
+                return
+        }
+        
+        let wrapperNode = SCNNode()
+        for child in virtualObjectScene.rootNode.childNodes{
+            child.geometry?.firstMaterial?.lightingModel = .physicallyBased
+            wrapperNode.addChildNode(child)
+        }
+        lampNode.addChildNode(wrapperNode)
+        
+        sceneView.scene.rootNode.addChildNode(lampNode)
+    }
+    
     
 }
 

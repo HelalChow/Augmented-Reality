@@ -21,45 +21,45 @@
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6yS-AB-bkE">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </arscnView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9B-SR-b0n">
-                                <rect key="frame" x="249" y="721" width="110" height="57"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iek-Zk-glq">
+                                <rect key="frame" x="246" y="748" width="129" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.59607843140000005" green="0.89411764709999997" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="68" id="7r7-DQ-b3b"/>
-                                    <constraint firstAttribute="width" constant="68" id="9ek-Hz-ofP"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="32" id="SeB-ia-kTW"/>
-                                </constraints>
-                                <state key="normal" title="Add Cup"/>
+                                <state key="normal" title="Add Chair"/>
                                 <connections>
-                                    <action selector="addCup:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oeV-sO-AQd"/>
+                                    <action selector="addCandle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3PQ-ar-5rK"/>
+                                    <action selector="addChair:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Utq-zm-s9d"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmU-lm-AQe">
-                                <rect key="frame" x="16" y="721" width="106" height="57"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZa-in-Mkm">
+                                <rect key="frame" x="0.0" y="746" width="116" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.59607843140000005" green="0.89411764709999997" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="KyR-m8-EKT"/>
-                                    <constraint firstAttribute="width" constant="68" id="VuF-qt-iE0"/>
-                                </constraints>
-                                <state key="normal" title="Add Cube"/>
+                                <state key="normal" title="Add Lamp"/>
                                 <connections>
-                                    <action selector="addCube:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hkA-fi-8oO"/>
+                                    <action selector="addCandle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jY6-4k-p6T"/>
+                                    <action selector="addLamp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wkP-HR-hmV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="glL-6K-ZnC">
+                                <rect key="frame" x="124" y="745" width="114" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.59607843140000005" green="0.89411764709999997" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Add Candle"/>
+                                <connections>
+                                    <action selector="addCandle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TUB-P3-UXd"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="lmU-lm-AQe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="0qC-aw-zBr"/>
                             <constraint firstItem="6yS-AB-bkE" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="5um-go-0uM"/>
                             <constraint firstItem="6yS-AB-bkE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Aew-Su-o7E"/>
                             <constraint firstItem="6yS-AB-bkE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="HY9-Ii-unb"/>
                             <constraint firstItem="6yS-AB-bkE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JFh-HI-ENk"/>
-                            <constraint firstItem="d9B-SR-b0n" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="UlF-Ra-Oo7"/>
                             <constraint firstItem="6yS-AB-bkE" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Wj6-h3-PMW"/>
                             <constraint firstAttribute="bottom" secondItem="6yS-AB-bkE" secondAttribute="bottom" id="bDf-8j-LXa"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="d9B-SR-b0n" secondAttribute="trailing" constant="16" id="eLX-BG-aXM"/>
                             <constraint firstAttribute="bottom" secondItem="6yS-AB-bkE" secondAttribute="bottom" id="hKq-Wx-igi"/>
-                            <constraint firstItem="lmU-lm-AQe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="613" id="iup-HK-cha"/>
                             <constraint firstItem="6yS-AB-bkE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="nVF-Jr-eLH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
