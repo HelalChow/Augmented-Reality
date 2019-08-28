@@ -153,5 +153,27 @@ class ViewController: UIViewController {
     }
     
     
+    @IBAction func addVase(_ sender: Any) {
+        let vaseNode = SCNNode()
+        
+        let cc = getCameraCoordinates(sceneView: sceneView)
+        vaseNode.position = SCNVector3(cc.x, cc.y, cc.z)
+        
+        guard let virtualObjectScene = SCNScene(named: "vase.scn", inDirectory: "Models.scnassets/vase")
+            else{
+                return
+        }
+        
+        let wrapperNode = SCNNode()
+        for child in virtualObjectScene.rootNode.childNodes{
+            child.geometry?.firstMaterial?.lightingModel = .physicallyBased
+            wrapperNode.addChildNode(child)
+        }
+        vaseNode.addChildNode(wrapperNode)
+        
+        sceneView.scene.rootNode.addChildNode(vaseNode)
+    }
+    
+    
 }
 
