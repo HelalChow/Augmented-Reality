@@ -17,11 +17,12 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var sceneView: ARSCNView!
     
+    let configuration = ARWorldTrackingConfiguration()
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        let configuration = ARWorldTrackingConfiguration()
+        
 //        configuration.planeDetection = .horizontal
         
         sceneView.session.run(configuration)
@@ -170,6 +171,20 @@ class ViewController: UIViewController {
         sceneView.scene.rootNode.addChildNode(vaseNode)
     }
     
+    
+    @IBAction func reset(_ sender: Any) {
+        self.restartSession()
+    }
+        
+    // Pause session to stop keeping track of position
+    func restartSession() {
+        self.sceneView.session.pause()
+        self.sceneView.scene.rootNode.enumerateChildNodes { (node, _) in
+            node.removeFromParentNode()
+        }
+        self.sceneView.session.run(configuration, options: [.resetTracking, .removeExistingAnchors])
+    }
+
     
 }
 
