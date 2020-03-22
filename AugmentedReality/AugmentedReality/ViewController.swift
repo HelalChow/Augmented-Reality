@@ -22,7 +22,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         let configuration = ARWorldTrackingConfiguration()
-        configuration.planeDetection = .horizontal
+//        configuration.planeDetection = .horizontal
         
         sceneView.session.run(configuration)
         
@@ -62,12 +62,20 @@ class ViewController: UIViewController {
         
     }
     
+    //Gives random number between to numbers
+    func randomNumbers(firstNum: CGFloat, secondNum: CGFloat) -> CGFloat {
+        return CGFloat(arc4random()) / CGFloat(UINT32_MAX) * abs(firstNum - secondNum) + min(firstNum, secondNum)
+    }
+    
     
     @IBAction func addChair(_ sender: Any) {
         let chairNode = SCNNode()
         
-        let cc = getCameraCoordinates(sceneView: sceneView)
-        chairNode.position = SCNVector3(cc.x, cc.y, cc.z)
+        // Places object in random positions
+        let x = randomNumbers(firstNum: -0.3, secondNum: 0.3)
+        let y = randomNumbers(firstNum: -0.3, secondNum: 0.3)
+        let z = randomNumbers(firstNum: -0.6, secondNum: -1)
+        chairNode.position = SCNVector3(x,y,z)
         
         guard let virtualObjectScene = SCNScene(named: "chair.scn", inDirectory: "Models.scnassets/chair")
             else{
@@ -90,8 +98,11 @@ class ViewController: UIViewController {
     @IBAction func addCandle(_ sender: Any) {
         let candleNode = SCNNode()
         
-        let cc = getCameraCoordinates(sceneView: sceneView)
-        candleNode.position = SCNVector3(cc.x, cc.y, cc.z)
+        // Places object in random positions
+        let x = randomNumbers(firstNum: -0.3, secondNum: 0.3)
+        let y = randomNumbers(firstNum: -0.3, secondNum: 0.3)
+        let z = randomNumbers(firstNum: -0.6, secondNum: -1)
+        candleNode.position = SCNVector3(x,y,z)
         
         guard let virtualObjectScene = SCNScene(named: "candle.scn", inDirectory: "Models.scnassets/candle")
             else{
@@ -112,8 +123,11 @@ class ViewController: UIViewController {
     @IBAction func addLamp(_ sender: Any) {
         let lampNode = SCNNode()
         
-        let cc = getCameraCoordinates(sceneView: sceneView)
-        lampNode.position = SCNVector3(cc.x, cc.y, cc.z)
+        // Places object in random positions
+        let x = randomNumbers(firstNum: -0.3, secondNum: 0.3)
+        let y = randomNumbers(firstNum: -0.3, secondNum: 0.3)
+        let z = randomNumbers(firstNum: -0.6, secondNum: -1)
+        lampNode.position = SCNVector3(x,y,z)
         
         guard let virtualObjectScene = SCNScene(named: "lamp.scn", inDirectory: "Models.scnassets/lamp")
             else{
@@ -135,8 +149,11 @@ class ViewController: UIViewController {
     @IBAction func addVase(_ sender: Any) {
         let vaseNode = SCNNode()
         
-        let cc = getCameraCoordinates(sceneView: sceneView)
-        vaseNode.position = SCNVector3(cc.x, cc.y, cc.z)
+        // Places object in random positions
+        let x = randomNumbers(firstNum: -0.3, secondNum: 0.3)
+        let y = randomNumbers(firstNum: -0.3, secondNum: 0.3)
+        let z = randomNumbers(firstNum: -0.6, secondNum: -1)
+        vaseNode.position = SCNVector3(x,y,z)
         
         guard let virtualObjectScene = SCNScene(named: "vase.scn", inDirectory: "Models.scnassets/vase")
             else{
