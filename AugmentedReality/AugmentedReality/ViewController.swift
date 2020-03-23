@@ -33,6 +33,9 @@ class ViewController: UIViewController {
     private func registerGestureRecognizers(){
         let pinchGestureRecognizer = UIPinchGestureRecognizer(target: self, action: #selector(pinched))
         self.sceneView.addGestureRecognizer(pinchGestureRecognizer)
+        
+        let panGestureRecognizer = UIPanGestureRecognizer(target: self, action: #selector(panned))
+        self.sceneView.addGestureRecognizer(panGestureRecognizer)
     }
     
     @objc func pinched(recognizer :UIPinchGestureRecognizer){
@@ -50,6 +53,26 @@ class ViewController: UIViewController {
                 let pinchScaleZ = Float(recognizer.scale) * object.scale.z
                 object.scale = SCNVector3(pinchScaleX, pinchScaleY, pinchScaleZ)
                 recognizer.scale = 1
+            }
+        }
+    }
+    
+    @objc func panned(recognizer :UIPanGestureRecognizer){
+        if recognizer.state == .changed {
+            guard let sceneView = recognizer.view as? ARSCNView else{
+                return
+            }
+            // selecting which object to scale
+            let touch = recognizer.location(in: sceneView)
+            let hitTestResults = self.sceneView.hitTest(touch, options: nil)
+            if let hitTest = hitTestResults.first {
+                let object = hitTest.node
+                let translation = recognizer.translation(in: view)
+                object.position.x = Float(translation.x)
+                object.position.y += Float(translation.y)
+//                sceneView.center.x += translation.x
+//                sceneView.center.y += translation.y
+                recognizer.setTranslation(.zero, in: view)
             }
         }
     }
