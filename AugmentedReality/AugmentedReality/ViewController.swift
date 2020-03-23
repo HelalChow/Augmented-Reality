@@ -26,8 +26,32 @@ class ViewController: UIViewController {
 //        configuration.planeDetection = .horizontal
         
         sceneView.session.run(configuration)
+        registerGestureRecognizers()
         
-        
+    }
+    
+    private func registerGestureRecognizers(){
+        let pinchGestureRecognizer = UIPinchGestureRecognizer(target: self, action: #selector(pinched))
+        self.sceneView.addGestureRecognizer(pinchGestureRecognizer)
+    }
+    
+    @objc func pinched(recognizer :UIPinchGestureRecognizer){
+        if recognizer.state == .changed {
+            guard let sceneView = recognizer.view as? ARSCNView else{
+                return
+            }
+            // selecting which object to scale
+            let touch = recognizer.location(in: sceneView)
+            let hitTestResults = self.sceneView.hitTest(touch, options: nil)
+            if let hitTest = hitTestResults.first {
+                let object = hitTest.node
+                let pinchScaleX = Float(recognizer.scale) * object.scale.x
+                let pinchScaleY = Float(recognizer.scale) * object.scale.y
+                let pinchScaleZ = Float(recognizer.scale) * object.scale.z
+                object.scale = SCNVector3(pinchScaleX, pinchScaleY, pinchScaleZ)
+                recognizer.scale = 1
+            }
+        }
     }
     
     func randomFloat(min: Float, max: Float) -> Float{
