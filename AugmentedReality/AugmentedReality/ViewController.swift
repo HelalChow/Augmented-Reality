@@ -67,10 +67,15 @@ class ViewController: UIViewController {
             if let hitTest = hitTestResults.first {
                 let object = hitTest.node
                 let translation = recognizer.translation(in: view)
-                object.position.x = Float(translation.x)
-                object.position.y += Float(translation.y)
+                
+                let panX = Float(translation.x) + object.position.x
+                let panY = Float(translation.y) + object.position.y
+                object.position = SCNVector3(panX, panY, -1.0)
+//                object.position.x += Float(translation.x)
+//                object.position.y += Float(translation.y)
 //                sceneView.center.x += translation.x
 //                sceneView.center.y += translation.y
+                
                 recognizer.setTranslation(.zero, in: view)
             }
         }
