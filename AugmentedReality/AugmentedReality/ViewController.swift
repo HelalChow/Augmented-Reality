@@ -121,20 +121,27 @@ class ViewController: UIViewController {
     
     
     @IBAction func addChair(_ sender: Any) {
-        
-        let hatScene = SCNScene(named: "hat.dae")
-        guard let hatNode = hatScene?.rootNode.childNode(withName: "CowboyHat", recursively: true) else{
-            print("fail")
-            return
-        }
+        let chairNode = SCNNode()
         
         // Places object in random positions
         let x = randomNumbers(firstNum: -0.3, secondNum: 0.3)
         let y = randomNumbers(firstNum: -0.3, secondNum: 0.3)
         let z = randomNumbers(firstNum: -0.6, secondNum: -1)
-        hatNode.position = SCNVector3(x,y,z)
+        chairNode.position = SCNVector3(x,y,z)
         
-        sceneView.scene.rootNode.addChildNode(hatNode)
+        guard let virtualObjectScene = SCNScene(named: "chair.scn", inDirectory: "Models.scnassets/chair")
+            else{
+                return
+        }
+        
+        let wrapperNode = SCNNode()
+        for child in virtualObjectScene.rootNode.childNodes{
+            child.geometry?.firstMaterial?.lightingModel = .physicallyBased
+            wrapperNode.addChildNode(child)
+        }
+        chairNode.addChildNode(wrapperNode)
+        
+        sceneView.scene.rootNode.addChildNode(chairNode)
     }
     
     

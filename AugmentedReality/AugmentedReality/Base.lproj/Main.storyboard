@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,10 +18,13 @@
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6yS-AB-bkE">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </arscnView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iek-Zk-glq">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iek-Zk-glq">
                                 <rect key="frame" x="284" y="763" width="91" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.386097046" blue="0.48204708750000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="1f5-Ff-ENe"/>
+                                    <constraint firstAttribute="width" constant="91" id="UTJ-x4-C0W"/>
+                                </constraints>
                                 <state key="normal" title="Add Chair">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -30,19 +32,25 @@
                                     <action selector="addChair:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QSx-xT-oah"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZa-in-Mkm">
-                                <rect key="frame" x="0.0" y="763" width="98" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JZa-in-Mkm">
+                                <rect key="frame" x="0.0" y="764" width="98" height="48"/>
                                 <color key="backgroundColor" red="0.59607843140000005" green="0.89411764709999997" blue="0.5568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="98" id="1Kd-d5-p0S"/>
+                                    <constraint firstAttribute="height" constant="48" id="juB-rz-63P"/>
+                                </constraints>
                                 <state key="normal" title="Add Lamp"/>
                                 <connections>
                                     <action selector="addLamp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wkP-HR-hmV"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="glL-6K-ZnC">
-                                <rect key="frame" x="98" y="763" width="93" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="glL-6K-ZnC">
+                                <rect key="frame" x="98" y="763" width="91" height="49"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="Sl7-26-SMt"/>
+                                    <constraint firstAttribute="width" constant="91" id="gdR-II-hfH"/>
+                                </constraints>
                                 <state key="normal" title="Add Candle">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -50,10 +58,13 @@
                                     <action selector="addCandle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TUB-P3-UXd"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GwN-ym-c7S">
-                                <rect key="frame" x="191" y="763" width="94" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GwN-ym-c7S">
+                                <rect key="frame" x="197" y="763" width="87" height="49"/>
                                 <color key="backgroundColor" red="0.6586568214904458" green="0.40733094100326273" blue="0.70524666878172582" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="87" id="pzA-1K-Ndz"/>
+                                    <constraint firstAttribute="height" constant="49" id="x6I-3H-q7o"/>
+                                </constraints>
                                 <state key="normal" title="Add Vase">
                                     <color key="titleColor" red="0.48395136389855908" green="0.93098121321864502" blue="0.96620899439999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
@@ -61,10 +72,12 @@
                                     <action selector="addVase:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xc0-yR-w8o"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IWb-Gk-5co">
-                                <rect key="frame" x="156" y="699" width="63" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IWb-Gk-5co">
+                                <rect key="frame" x="156" y="703" width="63" height="30"/>
                                 <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="63" id="NlU-J4-OGc"/>
+                                </constraints>
                                 <state key="normal" title="Reset">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -76,12 +89,25 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6yS-AB-bkE" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="5um-go-0uM"/>
+                            <constraint firstItem="Iek-Zk-glq" firstAttribute="leading" secondItem="GwN-ym-c7S" secondAttribute="trailing" id="7I7-ji-jJ8"/>
                             <constraint firstItem="6yS-AB-bkE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Aew-Su-o7E"/>
+                            <constraint firstItem="Iek-Zk-glq" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="B2k-Yz-7B7"/>
+                            <constraint firstItem="JZa-in-Mkm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="BWU-rX-Vo3"/>
+                            <constraint firstItem="glL-6K-ZnC" firstAttribute="baseline" secondItem="GwN-ym-c7S" secondAttribute="baseline" id="HFx-gb-bs1"/>
                             <constraint firstItem="6yS-AB-bkE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="HY9-Ii-unb"/>
+                            <constraint firstItem="glL-6K-ZnC" firstAttribute="top" secondItem="IWb-Gk-5co" secondAttribute="bottom" constant="30" id="IYe-jE-NSk"/>
                             <constraint firstItem="6yS-AB-bkE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JFh-HI-ENk"/>
+                            <constraint firstItem="IWb-Gk-5co" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="156" id="LaN-sG-mTh"/>
                             <constraint firstItem="6yS-AB-bkE" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Wj6-h3-PMW"/>
+                            <constraint firstAttribute="bottom" secondItem="JZa-in-Mkm" secondAttribute="bottom" id="a9V-FF-82D"/>
                             <constraint firstAttribute="bottom" secondItem="6yS-AB-bkE" secondAttribute="bottom" id="bDf-8j-LXa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IWb-Gk-5co" secondAttribute="trailing" constant="156" id="d8F-rC-xkb"/>
+                            <constraint firstItem="JZa-in-Mkm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ezK-ui-Fsh"/>
+                            <constraint firstAttribute="bottom" secondItem="JZa-in-Mkm" secondAttribute="bottom" id="gcd-Us-K6N"/>
+                            <constraint firstAttribute="bottom" secondItem="Iek-Zk-glq" secondAttribute="bottom" id="gu6-fc-8Hs"/>
                             <constraint firstAttribute="bottom" secondItem="6yS-AB-bkE" secondAttribute="bottom" id="hKq-Wx-igi"/>
+                            <constraint firstItem="glL-6K-ZnC" firstAttribute="baseline" secondItem="Iek-Zk-glq" secondAttribute="baseline" id="lvg-6V-ufv"/>
+                            <constraint firstItem="glL-6K-ZnC" firstAttribute="leading" secondItem="JZa-in-Mkm" secondAttribute="trailing" id="n0c-2g-OZp"/>
                             <constraint firstItem="6yS-AB-bkE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="nVF-Jr-eLH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
